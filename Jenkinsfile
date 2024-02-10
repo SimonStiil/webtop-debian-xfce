@@ -18,6 +18,8 @@ podTemplate(yaml: '''
         - name: kaniko-secret
           mountPath: /kaniko/.docker
       restartPolicy: Never
+      nodeSelector: 
+        kubernetes.io/arch: amd64
       volumes:
       - name: kaniko-secret
         secret:
