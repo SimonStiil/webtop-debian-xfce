@@ -1,6 +1,5 @@
 FROM linuxserver/webtop:ubuntu-xfce-version-1e71751f
 RUN rm /etc/apt/sources.list.d/docker.list && \
-    rm /etc/apt/sources.list.d/nodesource.list && \
     apt update && \
     apt install -y --no-install-recommends \
       thunderbird \
